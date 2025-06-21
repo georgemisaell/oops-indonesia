@@ -12,7 +12,7 @@ const LandingPage = () => {
   }, [])
 
   const controls = useAnimation()
-  const [ref, inView] = useInView({
+  const [inView] = useInView({
     triggerOnce: true,
     threshold: 0.2,
   })
