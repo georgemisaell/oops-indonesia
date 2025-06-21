@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import { Helmet } from 'react-helmet';
 import LandingPage from "./pages/LandingPage";
 import ArticleArchive from "./pages/ArticleArchive";
 import ProductPage from "./pages/ProductPage";
@@ -13,7 +14,7 @@ import ManageArticles from "./pages/ManageArticles";
 import ManageProducts from "./pages/ManageProducts";
 import ManageUsers from "./pages/ManageUsers" ;
 import ManageTransactions from "./pages/ManageTransactions";
-import { Helmet } from 'react-helmet';
+import HistoryTransaction from "./pages/HistoryTransaction";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="/checkout" element={<CheckoutPage />} />
           <Route path="/articles" element={<ArticleArchive />} />
           <Route path="/article/:id" element={<DetailArticlePage />} />
+          <Route path="/history-transaction" element={<HistoryTransaction />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/manage-articles" element={<ManageArticles />} />
           <Route path="/manage-products" element={<ManageProducts />} />
